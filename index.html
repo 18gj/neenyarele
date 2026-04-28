@@ -1,52 +1,137 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <title>Biotique Welcome</title>
+  <title>Biotique Glow</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    img.main {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      margin-bottom: 20px;
+      transition: transform 0.4s;
+    }
+
+    img.main:hover {
+      transform: scale(1.05);
+    }
+
+    .card {
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px 40px;
+      color: #4e342e;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #6d4c41;
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    .romantic {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #8d6e63;
+      font-style: italic;
+    }
+
+    .gallery {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .you-me {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #5d4037;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+  </style>
 </head>
 
-<body style="
-  margin:0;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-family:'Poppins', sans-serif;
-  background: linear-gradient(135deg, #d4fc79, #96e6a1);
-">
+<body>
 
-  <div style="text-align:center;">
+  <div class="container">
 
-```
-<!-- Nature Image -->
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80"
-     style="width:240px; height:240px; object-fit:cover; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.2); margin-bottom:20px;">
+    <!-- Main Beauty Image -->
+    <img class="main" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80">
 
-<!-- Editable Message -->
-<div contenteditable="true"
-     style="
-     background: rgba(255,255,255,0.3);
-     backdrop-filter: blur(12px);
-     border-radius: 20px;
-     padding: 25px 40px;
-     font-size: 26px;
-     color: #1b5e20;
-     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-     border: 1px solid rgba(255,255,255,0.4);
-     cursor: text;
-     ">
+    <div class="card">
 
-  🌿 Welcome to Biotique 🌿<br>
-  <span style="font-size:16px; color:#2e7d32;">
-    Pure • Natural • Ayurvedic<br>
-    Buy me<br> 
-    With love<br> 
-    GJ
-  </span>
+      <h1>🌿 Biotique Glow 🌿</h1>
 
-</div>
-```
+      <p>
+        Let your hair speak before you do ✨<br>
+        Smooth. Shiny. Irresistible.
+      </p>
+
+      <p class="romantic">
+        "I don’t just notice your hair...<br>
+        I get lost in it."
+      </p>
+
+      <div class="you-me">
+        💛 You + Me = Perfect Shade 💛
+      </div>
+
+    </div>
+
+    <!-- Beauty + Couple vibe images -->
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=300&q=80">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80">
+    </div>
 
   </div>
 
